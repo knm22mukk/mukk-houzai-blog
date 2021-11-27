@@ -13,6 +13,9 @@ export default function Blog({ blog }) {
           </li>
         ))}
       </ul>
+      <Link href='/'>
+        <a className='text-blue-600'>HOME</a>
+      </Link>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
       <main className='mt-10 text-center'>
         <h1 className='text-blue-500'>Welcome to Mukk Blog</h1>
       </main>
+      <Link href='/blog'>
+        <a className='text-blue-600'>ブログページ</a>
+      </Link>
     </div>
   );
 }
