@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Date from './Date';
 import Link from './Link';
 
 export default function BlogCard({ title, description, publishedAt, href, imageSrc }) {
@@ -8,9 +9,11 @@ export default function BlogCard({ title, description, publishedAt, href, imageS
         <div className=''>
           <Image src={imageSrc} width={300} height={300} alt={title} className='' />
           <div className='mt-4 text-center text-blue-500'>
-            <h1 className='text-xl font-bold'>{title}</h1>
+            <h2 className='text-xl font-bold'>{title}</h2>
             <p className='mt-2 text-gray-600'>{description}</p>
-            <p className='mt-2 text-gray-600'>{publishedAt}</p>
+            <p className='mt-2 text-gray-600'>
+              <Date dateString={publishedAt} />
+            </p>
             <button className='py-2 px-14 my-2 tracking-widest text-white bg-blue-600 hover:bg-blue-500 rounded-full transition duration-200'>
               MORE
             </button>
