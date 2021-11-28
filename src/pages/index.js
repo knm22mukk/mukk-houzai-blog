@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Link href='/blog'>
         <a className='text-blue-600'>ブログページ</a>
       </Link>
+      <Footer />
     </div>
   );
 }
