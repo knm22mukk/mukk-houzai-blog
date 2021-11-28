@@ -5,7 +5,8 @@ import SocialIcons from './SocialIcons';
 export default function Footer() {
   return (
     <footer>
-      <div className='flex flex-col items-center mt-16'>
+      <hr className='mt-16 text-gray-500' />
+      <div className='flex flex-col items-center mt-10'>
         <div className='flex mb-3 space-x-4'>
           <SocialIcons kind='facebook' href={siteMetadata.facebook} size={24} />
           <SocialIcons kind='github' href={siteMetadata.github} size={24} />
