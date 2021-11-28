@@ -3,7 +3,7 @@ import { client } from '../libs/client';
 
 export default function Blog({ blog }) {
   return (
-    <div>
+    <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3'>
       {blog.map((blog) => (
         <BlogCard
           key={blog.id}

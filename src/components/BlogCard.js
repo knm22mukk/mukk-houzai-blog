@@ -4,7 +4,7 @@ import Link from './Link';
 export default function BlogCard({ title, description, publishedAt, href, imageSrc }) {
   return (
     <Link href={href}>
-      <div className='py-4 px-4 mx-auto md:mx-0 mt-16 w-72 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-110'>
+      <div className='p-4 mx-auto mt-6 w-72 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-110'>
         <div className=''>
           <Image src={imageSrc} width={300} height={300} alt={title} className='' />
           <div className='mt-4 text-center text-blue-500'>
