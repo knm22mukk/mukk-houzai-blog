@@ -1,15 +1,27 @@
+import Button from '../../components/Button';
+import Date from '../../components/Date';
+import Link from '../../components/Link';
+import PageTitle from '../../components/PageTitle';
 import { client } from '../../libs/client';
 
 export default function BlogId({ blog }) {
   return (
     <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
+      <PageTitle title={blog.title} />
+      <p className='text-sm text-center'>
+        <Date dateString={blog.publishedAt} />
+      </p>
       <div
         dangerouslySetInnerHTML={{
           __html: `${blog.body}`,
         }}
+        className='prose'
       />
+      <div className='pt-10'>
+        <Link href='/blog'>
+          <Button title='一覧に戻る' />
+        </Link>
+      </div>
     </main>
   );
 }
