@@ -1,6 +1,7 @@
 import headerNavLinks from '../data/headerNavLinks';
 import siteMetadata from '../data/siteMetadata';
 import Link from './Link';
+import MobileNav from './MobileNav';
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
             <div className='flex justify-between items-center'>
               <div className='mr-3'></div>
               {typeof siteMetadata.headerTitle === 'string' ? (
-                <div className='hidden sm:block h-6 text-3xl font-bold hover:text-blue-600'>
+                <div className='h-6 text-3xl font-bold hover:text-blue-600'>
                   {siteMetadata.headerTitle}
                 </div>
               ) : (
@@ -26,12 +27,13 @@ export default function Header() {
               <Link
                 key={link.title}
                 href={link.href}
-                className='p-1 sm:p-4 font-medium text-gray-900 hover:text-blue-600'
+                className='p-1 sm:p-4 font-bold text-gray-900 hover:text-blue-600'
               >
                 {link.title}
               </Link>
             ))}
           </div>
+          <MobileNav />
         </div>
       </header>
     </div>
