@@ -6,7 +6,7 @@ import SectionContainer from './SecitonContainer';
 export default function TempleteLayout({ children }) {
   return (
     <SectionContainer>
-      <div className='flex flex-col justify-between h-screen'>
+      <div className='flex flex-col justify-between'>
         <Header />
         <main className='mb-auto'>
           {children}

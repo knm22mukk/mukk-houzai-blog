@@ -8,11 +8,11 @@ export default function Footer() {
       <hr className='mt-16 text-gray-500' />
       <div className='flex flex-col items-center mt-10'>
         <div className='flex mb-3 space-x-4'>
-          <SocialIcons kind='facebook' href={siteMetadata.facebook} size={24} />
-          <SocialIcons kind='github' href={siteMetadata.github} size={24} />
-          <SocialIcons kind='instagram' href={siteMetadata.instagram} size={24} />
           <SocialIcons kind='mail' href={`mailto:${siteMetadata.email}`} size={24} />
           <SocialIcons kind='twitter' href={siteMetadata.twitter} size={24} />
+          <SocialIcons kind='instagram' href={siteMetadata.instagram} size={24} />
+          <SocialIcons kind='facebook' href={siteMetadata.facebook} size={24} />
+          <SocialIcons kind='github' href={siteMetadata.github} size={24} />
         </div>
         <div className='flex mb-2 space-x-2 text-sm text-gray-500'>
           <div>{`© ${new Date().getFullYear()}`}</div>

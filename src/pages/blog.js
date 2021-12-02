@@ -6,7 +6,7 @@ export default function Blog({ blog }) {
   return (
     <>
       <PageTitle title='Blog' />
-      <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+      <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
         {blog.map((blog) => (
           <BlogCard
             key={blog.id}

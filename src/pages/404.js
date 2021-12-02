@@ -5,7 +5,7 @@ export default function Custom404() {
   return (
     <div className='flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center md:mt-24 md:space-x-6'>
       <div className='pt-6 pb-8 md:space-y-5 space-x-2'>
-        <h1 className='md:px-6 text-6xl md:text-8xl font-extrabold tracking-tight leading-9 text-gray-900 dark:text-gray-100 md:border-r-2'>
+        <h1 className='md:px-6 text-6xl md:text-8xl font-extrabold tracking-tight leading-9 text-gray-900 md:border-r-2'>
           404
         </h1>
       </div>

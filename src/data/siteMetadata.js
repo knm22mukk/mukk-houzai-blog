@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: '包装資材営業マンむっくのブログサイト',
+  title: '包装資材営業マンむっくのブログ',
   author: '包材営業マンむっく',
   headerTitle: 'Mukk Blog',
   description: '包装資材営業マンむっくが商品情報などを発信する個人ブログサイトです。',
