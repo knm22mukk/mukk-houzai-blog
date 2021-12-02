@@ -10,9 +10,7 @@ export default function Custom404() {
         </h1>
       </div>
       <div className='max-w-md'>
-        <p className='mb-4 text-xl md:text-2xl font-bold leading-normal'>
-          おっと！
-          <br />
+        <p className='my-4 text-xl md:text-2xl font-bold leading-normal'>
           ページが見つかりませんでした！
         </p>
         <p className='mb-8'>URLに間違いがないかご確認ください。</p>

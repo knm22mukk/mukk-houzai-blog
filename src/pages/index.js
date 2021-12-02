@@ -7,6 +7,7 @@ export default function Home() {
       <MyHead />
       <main>
         <PageTitle title='Home' />
+        <div className='h-72 text-center'>main</div>
       </main>
     </div>
   );
