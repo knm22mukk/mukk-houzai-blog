@@ -1,10 +1,12 @@
 import BlogCard from '../components/BlogCard';
+import MyHead from '../components/MyHead';
 import PageTitle from '../components/PageTitle';
 import { client } from '../libs/client';
 
 export default function Blog({ blog }) {
   return (
     <>
+      <MyHead />
       <PageTitle title='Blog' />
       <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
         {blog.map((blog) => (
