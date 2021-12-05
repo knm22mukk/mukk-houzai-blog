@@ -14,10 +14,12 @@ export default function TopImage() {
         />
       </div>
       <h2 className='my-4 text-3xl font-bold text-center'>{siteMetadata.title}</h2>
-      <p className='mt-2 font-semibold text-center'>
+      <p className='mt-2 font-semibold text-center text-gray-600'>
         包装資材に関する新商品や話題の情報をご紹介します。
       </p>
-      <p className='mt-2 font-semibold text-center'>良ければSNSでのシェアもお願いします。</p>
+      <p className='mt-2 font-semibold text-center text-gray-600'>
+        良ければSNSでのシェアもお願いします。
+      </p>
     </>
   );
 }
