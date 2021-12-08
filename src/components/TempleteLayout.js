@@ -5,15 +5,15 @@ import SectionContainer from './SecitonContainer';
 
 export default function TempleteLayout({ children }) {
   return (
-    <SectionContainer>
-      <div className='flex flex-col justify-between'>
-        <Header />
+    <>
+      <Header />
+      <SectionContainer>
         <main className='mb-auto'>
           {children}
           <ScrollTop />
         </main>
-        <Footer />
-      </div>
-    </SectionContainer>
+      </SectionContainer>
+      <Footer />
+    </>
   );
 }

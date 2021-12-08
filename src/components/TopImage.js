@@ -1,25 +1,23 @@
-import Image from 'next/image';
 import siteMetadata from '../data/siteMetadata';
+import Link from './Link';
+import SocialIcons from './SocialIcons';
 
 export default function TopImage() {
   return (
     <>
-      <div className=''>
-        <Image
-          src='/images/moldimage.webp'
-          width={1024}
-          height={500}
-          alt='TopImage'
-          className='opacity-70'
-        />
+      <div
+        className='pt-3 w-full h-96 bg-cover opacity-80'
+        style={{ backgroundImage: `url('images/moldimage.webp')` }}
+      >
+        <div className='flex justify-center items-center w-full h-full'>
+          <div className='mx-10 text-center'>
+            <h1 className='mb-4 text-5xl font-bold text-white'>MUKK BLOG</h1>
+            <p className='inline-block sm:block text-lg text-white'>
+              包装資材、グルメ情報を発信する個人ブログです。
+            </p>
+          </div>
+        </div>
       </div>
-      <h2 className='my-4 text-3xl font-bold text-center'>{siteMetadata.title}</h2>
-      <p className='mt-2 font-semibold text-center text-gray-600'>
-        包装資材に関する新商品や話題の情報をご紹介します。
-      </p>
-      <p className='mt-2 font-semibold text-center text-gray-600'>
-        良ければSNSでのシェアもお願いします。
-      </p>
     </>
   );
 }

@@ -15,7 +15,6 @@ export default function BlogCard({ title, description, publishedAt, href, imageS
             <p className='mt-2 text-gray-600'>
               <Date dateString={publishedAt} />
             </p>
-            <Button title='more' />
           </div>
         </div>
       </div>
