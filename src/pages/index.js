@@ -14,7 +14,7 @@ export default function Home({ blog }) {
         <div className='pt-6'>
           <h2 className='pl-3 text-3xl font-bold'>最新の記事</h2>
         </div>
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:px-24'>
           {blog.map((blog) => (
             <BlogCard
               key={blog.id}

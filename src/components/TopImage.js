@@ -13,7 +13,7 @@ export default function TopImage() {
           <div className='mx-10 text-center'>
             <h1 className='mb-4 text-5xl font-bold text-white'>MUKK BLOG</h1>
             <p className='inline-block sm:block text-lg text-white'>
-              包装資材、グルメ情報を発信する個人ブログです。
+              包装資材、グルメ情報を発信する個人ブログ
             </p>
           </div>
         </div>
