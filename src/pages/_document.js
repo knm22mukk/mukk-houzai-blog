@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import GoogleAnalytics from '../components/analytics/GoogleAnalytics';
 import siteMetadata from '../data/siteMetadata';
 
 class MyDocument extends Document {
@@ -12,6 +13,7 @@ class MyDocument extends Document {
           <meta name='apple-mobile-web-app-title' content={siteMetadata.title} />
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
+          <GoogleAnalytics />
         </Head>
         <body>
           <Main />
