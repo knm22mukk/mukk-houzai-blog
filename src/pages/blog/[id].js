@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Button from '../../components/Button';
 import Date from '../../components/Date';
 import Link from '../../components/Link';
@@ -10,9 +11,12 @@ export default function BlogId({ blog }) {
     <main>
       <MyHead title={`むっく || ${blog.title}`} />
       <PageTitle title={blog.title} />
-      <p className='text-sm text-center'>
+      <p className='mb-3 text-sm text-center'>
         <Date dateString={blog.publishedAt} />
       </p>
+      <div className='text-center'>
+        <Image src={blog.image.url} width={400} height={400} alt={`${blog.title}イメージ`} />
+      </div>
       <div
         dangerouslySetInnerHTML={{
           __html: `${blog.body}`,

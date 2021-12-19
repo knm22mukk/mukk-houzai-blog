@@ -9,7 +9,6 @@ export default function BlogCard({ title, description, publishedAt, href, imageS
         <Image src={imageSrc} width={300} height={300} alt={title} />
         <div className='mt-4 text-center'>
           <h2 className='text-xl font-bold text-blue-500'>{title}</h2>
-          <p className='mt-2 text-gray-600'>{description}</p>
           <p className='mt-2 text-gray-600'>
             <Date dateString={publishedAt} />
           </p>
