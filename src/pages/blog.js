@@ -6,7 +6,7 @@ import { client } from '../libs/client';
 export default function Blog({ blog }) {
   return (
     <>
-      <MyHead />
+      <MyHead title='むっく || ブログ一覧' />
       <PageTitle title='Blog' />
       <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
         {blog.map((blog) => (

@@ -8,7 +8,7 @@ import { client } from '../../libs/client';
 export default function BlogId({ blog }) {
   return (
     <main>
-      <MyHead title={`ブログ || ${blog.title}`} />
+      <MyHead title={`むっく || ${blog.title}`} />
       <PageTitle title={blog.title} />
       <p className='text-sm text-center'>
         <Date dateString={blog.publishedAt} />

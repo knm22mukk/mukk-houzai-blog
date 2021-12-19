@@ -2,6 +2,7 @@ import BlogCard from '../components/BlogCard';
 import Button from '../components/Button';
 import Link from '../components/Link';
 import MyHead from '../components/MyHead';
+import News from '../components/News';
 import TopImage from '../components/TopImage';
 import { client } from '../libs/client';
 
@@ -12,7 +13,9 @@ export default function Home({ blog }) {
       <main>
         <TopImage />
         <div className='pt-6'>
-          <h2 className='pl-3 text-3xl font-bold'>最新の記事</h2>
+          <h2 className='py-10 text-4xl font-bold tracking-tight leading-9 text-center'>
+            最新の記事
+          </h2>
         </div>
         <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:px-24'>
           {blog.map((blog) => (
@@ -31,6 +34,7 @@ export default function Home({ blog }) {
             <Button title='ブログ一覧へ' />
           </Link>
         </div>
+        <News />
       </main>
     </div>
   );

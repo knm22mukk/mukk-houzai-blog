@@ -11,7 +11,6 @@ export default function Footer() {
           <SocialIcons kind='twitter' href={siteMetadata.twitter} size={24} />
           <SocialIcons kind='instagram' href={siteMetadata.instagram} size={24} />
           <SocialIcons kind='facebook' href={siteMetadata.facebook} size={24} />
-          <SocialIcons kind='github' href={siteMetadata.github} size={24} />
         </div>
         <div className='flex mb-2 space-x-2 text-sm text-gray-500'>
           <div>{`© ${new Date().getFullYear()}`}</div>

@@ -7,7 +7,7 @@ import siteMetadata from '../data/siteMetadata';
 export default function About() {
   return (
     <>
-      <MyHead title={`About || ${siteMetadata.author}`} />
+      <MyHead title='むっく || 自己紹介ページ' />
       <PageTitle title='About' />
       <div className='xl:grid xl:grid-cols-3 xl:gap-x-8 items-start'>
         <div className='flex flex-col items-center'>
@@ -26,7 +26,6 @@ export default function About() {
             <SocialIcons kind='twitter' href={siteMetadata.twitter} size={24} />
             <SocialIcons kind='instagram' href={siteMetadata.instagram} size={24} />
             <SocialIcons kind='facebook' href={siteMetadata.facebook} size={24} />
-            <SocialIcons kind='github' href={siteMetadata.github} size={24} />
           </div>
         </div>
         <div className='xl:col-span-2 pt-8 pb-8 max-w-none'>
