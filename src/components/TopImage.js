@@ -1,7 +1,3 @@
-import siteMetadata from '../data/siteMetadata';
-import Link from './Link';
-import SocialIcons from './SocialIcons';
-
 export default function TopImage() {
   return (
     <>

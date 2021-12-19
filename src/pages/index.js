@@ -10,7 +10,7 @@ export default function Home({ blog }) {
   return (
     <div>
       <MyHead />
-      <main>
+      <div>
         <TopImage />
         <div className='pt-6'>
           <h2 className='py-10 text-4xl font-bold tracking-tight leading-9 text-center'>
@@ -35,7 +35,7 @@ export default function Home({ blog }) {
           </Link>
         </div>
         <News />
-      </main>
+      </div>
     </div>
   );
 }

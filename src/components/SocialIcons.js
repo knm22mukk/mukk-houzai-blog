@@ -7,19 +7,8 @@ const SocialIcons = ({ kind, href, size = 30 }) => {
     return null;
 
   return (
-    <a
-      className='text-sm text-gray-500 hover:text-blue-500 transition'
-      target='_blank'
-      rel='noopener noreferrer'
-      href={href}
-    >
-      <Image
-        src={`/images/social-icons/${kind}.svg`}
-        className={`fill-current text-gray-700 hover:text-blue-500`}
-        alt='sns_icon'
-        width={size}
-        height={size}
-      />
+    <a target='_blank' rel='noopener noreferrer' href={href}>
+      <Image src={`/images/social-icons/${kind}.svg`} alt='sns_icon' width={size} height={size} />
     </a>
   );
 };
