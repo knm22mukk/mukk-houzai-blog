@@ -1,6 +1,6 @@
 export default function Button({ title }) {
   return (
-    <button className='py-2 px-8 my-2 tracking-widest text-white bg-blue-500 hover:bg-blue-700 rounded-lg transition'>
+    <button className='py-2 sm:py-4 px-4 sm:px-10 text-sm lg:text-xl lg:font-bold text-white bg-indigo-700 hover:bg-indigo-600 rounded border border-indigo-700 transition duration-150 ease-in-out'>
       {title}
     </button>
   );

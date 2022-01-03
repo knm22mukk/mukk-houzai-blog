@@ -4,8 +4,8 @@ import SocialIcons from './SocialIcons';
 
 export default function Footer() {
   return (
-    <footer>
-      <div className='flex flex-col items-center mt-10'>
+    <footer className='pt-10'>
+      <div className='flex flex-col items-center'>
         <div className='flex mb-3 space-x-4'>
           <SocialIcons kind='mail' href={`mailto:${siteMetadata.email}`} size={24} />
           <SocialIcons kind='twitter' href={siteMetadata.twitter} size={24} />

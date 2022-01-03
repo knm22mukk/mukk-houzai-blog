@@ -14,7 +14,6 @@ export default function Blog({ blog }) {
             key={blog.id}
             imageSrc={blog.image.url}
             title={blog.title}
-            description={blog.description}
             href={`/blog/${blog.id}`}
             publishedAt={blog.publishedAt}
           />

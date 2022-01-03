@@ -42,7 +42,7 @@ export const ScrollTop = () => {
   return (
     <button
       onClick={returnTop}
-      className='fixed right-5 bottom-5 p-4 bg-blue-500 rounded-full'
+      className='fixed right-5 bottom-5 p-4 bg-indigo-500 rounded-full'
       style={style}
     >
       <svg className='w-5 h-5 text-white' viewBox='0 0 20 20' fill='currentColor'>

@@ -31,7 +31,7 @@ export default function Home({ blog }) {
         </div>
         <div className='flex justify-end mt-2'>
           <Link href='/blog'>
-            <Button title='ブログ一覧へ' />
+            <Button title='記事一覧' />
           </Link>
         </div>
         <News />
