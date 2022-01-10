@@ -8,7 +8,7 @@ export default function Header() {
         className='object-cover object-center mb-10 rounded opacity-70'
         alt='hero'
         src='/images/moldimage.webp'
-        height={600}
+        height={650}
         width={1280}
       />
       <div className='mt-10 w-full text-center'>

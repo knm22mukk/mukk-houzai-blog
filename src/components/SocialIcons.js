@@ -8,7 +8,7 @@ const components = {
   instagram: FaInstagram,
 };
 
-const SocialIcons = ({ kind, href, size = 30 }) => {
+const SocialIcons = ({ kind, href, size }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null;
 
