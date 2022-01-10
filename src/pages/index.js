@@ -8,35 +8,31 @@ import { client } from '../libs/client';
 
 export default function Home({ blog }) {
   return (
-    <div>
+    <>
       <MyHead />
-      <div>
-        <TopImage />
-        <div className='pt-6'>
-          <h2 className='py-10 text-4xl font-bold tracking-tight leading-9 text-center'>
-            最新の記事
-          </h2>
-        </div>
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:px-24'>
-          {blog.map((blog) => (
-            <BlogCard
-              key={blog.id}
-              imageSrc={blog.image.url}
-              title={blog.title}
-              description={blog.description}
-              href={`/blog/${blog.id}`}
-              publishedAt={blog.publishedAt}
-            />
-          ))}
-        </div>
-        <div className='flex justify-end mt-2'>
-          <Link href='/blog'>
-            <Button title='記事一覧' />
-          </Link>
-        </div>
-        <News />
+      <TopImage />
+      <div className='pb-10'>
+        <h2 className='text-4xl font-bold tracking-tight leading-9 text-center'>最新の記事</h2>
       </div>
-    </div>
+      <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:px-24'>
+        {blog.map((blog) => (
+          <BlogCard
+            key={blog.id}
+            imageSrc={blog.image.url}
+            title={blog.title}
+            description={blog.description}
+            href={`/blog/${blog.id}`}
+            publishedAt={blog.publishedAt}
+          />
+        ))}
+      </div>
+      <div className='flex justify-center mt-10'>
+        <Link href='/blog'>
+          <Button title='記事一覧' />
+        </Link>
+      </div>
+      <News />
+    </>
   );
 }
 

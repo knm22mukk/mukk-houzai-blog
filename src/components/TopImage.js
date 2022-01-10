@@ -1,26 +1,27 @@
+import Image from 'next/image';
 import Button from './Button';
-import Link from './Link';
 
-export default function TopImage() {
+export default function Header() {
   return (
-    <div className='container flex flex-col items-center py-12 mx-auto'>
-      <div className='lg:flex flex-col justify-center items-center mb-5 sm:mb-10 w-11/12 sm:w-2/3'>
-        <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-7 md:leading-10 text-center text-gray-800'>
-          包装資材営業マンむっく
+    <section className='flex flex-col justify-center items-center py-24'>
+      <Image
+        className='object-cover object-center mb-10 rounded opacity-70'
+        alt='hero'
+        src='/images/moldimage.webp'
+        height={600}
+        width={1280}
+      />
+      <div className='mt-10 w-full text-center'>
+        <h1 className='mb-4 text-4xl font-bold tracking-tight leading-9 text-center'>MUKK BLOG</h1>
+        <p className='mb-8 leading-relaxed text-gray-600'>
+          包装資材、衛生資材、食器、洗剤など様々な商品情報などを発信していきます。
           <br />
-          個人ブログサイト
-        </h1>
-        <p className='mt-5 sm:mt-10 lg:w-10/12 text-sm sm:text-lg font-normal text-center text-gray-400'>
-          包装資材の営業マンむっくが商品情報、市場の情報などを発信する個人ブログサイトです。
+          是非ゆっくり見ていってください。
           <br />
-          新商品、注目されている商品を都度更新していきますのでゆっくり見ていってください。
+          SNSでも発信していきますので良ければフォローお願いします。
         </p>
+        <Button title='記事一覧' />
       </div>
-      <div className='flex justify-around items-center'>
-        <Link href='/blog' className>
-          <Button title='記事一覧' />
-        </Link>
-      </div>
-    </div>
+    </section>
   );
 }
