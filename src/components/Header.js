@@ -16,7 +16,7 @@ export default function Header() {
             alt='logo'
             className='rounded-full'
           />
-          <div className='px-2 text-4xl font-bold hover:text-indigo-600'>
+          <div className='px-2 text-3xl md:text-4xl font-bold hover:text-indigo-600'>
             {siteMetadata.headerTitle}
           </div>
         </div>

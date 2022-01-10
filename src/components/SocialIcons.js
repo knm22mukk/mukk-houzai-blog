@@ -1,14 +1,15 @@
-import { FaFacebook, FaMailBulk, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const components = {
-  mail: FaMailBulk,
+  mail: HiOutlineMail,
   github: FaGithub,
   facebook: FaFacebook,
   twitter: FaTwitter,
   instagram: FaInstagram,
 };
 
-const SocialIcons = ({ kind, href, size }) => {
+const SocialIcons = ({ kind, href }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null;
 
@@ -16,7 +17,7 @@ const SocialIcons = ({ kind, href, size }) => {
 
   return (
     <a target='_blank' rel='noopener noreferrer' href={href}>
-      <SocialIcon className={`fill-current hover:text-indigo-500 h-${size} w-${size}`} />
+      <SocialIcon className={`hover:text-indigo-500 text-2xl`} />
     </a>
   );
 };
