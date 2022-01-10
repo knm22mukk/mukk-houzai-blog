@@ -15,7 +15,7 @@ export default function About() {
             src='/images/logo.png'
             alt='avatar'
             width={192}
-            height='192'
+            height={192}
             className='w-48 h-48 rounded-full'
           />
           <h3 className='pt-4 pb-2 text-2xl font-bold tracking-tight leading-8'>
