@@ -1,14 +1,24 @@
-import Image from 'next/image';
+import { FaFacebook, FaMailBulk, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
 
-// Icons taken from: https://simpleicons.org/
+const components = {
+  mail: FaMailBulk,
+  github: FaGithub,
+  facebook: FaFacebook,
+  twitter: FaTwitter,
+  instagram: FaInstagram,
+};
 
 const SocialIcons = ({ kind, href, size = 30 }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null;
 
+  const SocialIcon = components[kind];
+
   return (
     <a target='_blank' rel='noopener noreferrer' href={href}>
-      <Image src={`/images/social-icons/${kind}.svg`} alt='sns_icon' width={size} height={size} />
+      <SocialIcon
+        className={`fill-current text-gray-700 hover:text-indigo-500 h-${size} w-${size}`}
+      />
     </a>
   );
 };

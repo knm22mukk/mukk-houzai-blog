@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { FaAngleDoubleUp } from 'react-icons/fa';
 
 export const ScrollTop = () => {
   const [isButtonActive, setIsButtonActive] = useState(false);
@@ -45,13 +46,7 @@ export const ScrollTop = () => {
       className='fixed right-5 bottom-5 p-4 bg-indigo-500 rounded-full'
       style={style}
     >
-      <svg className='w-5 h-5 text-white' viewBox='0 0 20 20' fill='currentColor'>
-        <path
-          fillRule='evenodd'
-          d='M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z'
-          clipRule='evenodd'
-        />
-      </svg>
+      <FaAngleDoubleUp className='w-10 h-10 text-white' />
     </button>
   );
 };

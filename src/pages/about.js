@@ -22,10 +22,10 @@ export default function About() {
             {siteMetadata.author}
           </h3>
           <div className='flex pt-6 space-x-3'>
-            <SocialIcons kind='mail' href={`mailto:${siteMetadata.email}`} size={24} />
-            <SocialIcons kind='twitter' href={siteMetadata.twitter} size={24} />
-            <SocialIcons kind='instagram' href={siteMetadata.instagram} size={24} />
-            <SocialIcons kind='facebook' href={siteMetadata.facebook} size={24} />
+            <SocialIcons kind='mail' href={`mailto:${siteMetadata.email}`} size={10} />
+            <SocialIcons kind='twitter' href={siteMetadata.twitter} size={10} />
+            <SocialIcons kind='instagram' href={siteMetadata.instagram} size={10} />
+            <SocialIcons kind='facebook' href={siteMetadata.facebook} size={10} />
           </div>
         </div>
         <div className='xl:col-span-2 pt-8 pb-8 max-w-none'>
