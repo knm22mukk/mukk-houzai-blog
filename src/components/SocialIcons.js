@@ -16,9 +16,7 @@ const SocialIcons = ({ kind, href, size = 30 }) => {
 
   return (
     <a target='_blank' rel='noopener noreferrer' href={href}>
-      <SocialIcon
-        className={`fill-current text-gray-700 hover:text-indigo-500 h-${size} w-${size}`}
-      />
+      <SocialIcon className={`fill-current hover:text-indigo-500 h-${size} w-${size}`} />
     </a>
   );
 };

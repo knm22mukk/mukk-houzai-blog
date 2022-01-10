@@ -6,7 +6,7 @@ import MobileNav from './MobileNav';
 
 export default function Header() {
   return (
-    <header className='flex justify-around items-center py-10 h-32 bg-white'>
+    <header className='flex justify-around items-center py-10 h-32 text-gray-900 bg-white'>
       <Link href='/' aria-label='包装資材営業マンむっくのブログサイト'>
         <div className='flex justify-between items-center'>
           <Image

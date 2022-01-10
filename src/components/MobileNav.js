@@ -44,7 +44,7 @@ export default function MobileNav() {
             <div key={link.title} className='py-4 px-12'>
               <Link
                 href={link.href}
-                className='text-2xl font-bold tracking-widest text-gray-900'
+                className='text-2xl font-bold tracking-widest'
                 onClick={onToggleNav}
               >
                 {link.title}
