@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Button from '../../components/Button';
+import Container from '../../components/Container';
 import Date from '../../components/Date';
 import Link from '../../components/Link';
 import MyHead from '../../components/MyHead';
@@ -8,7 +9,7 @@ import { client } from '../../libs/client';
 
 export default function BlogId({ blog }) {
   return (
-    <main>
+    <Container>
       <MyHead title={`むっく || ${blog.title}`} />
       <PageTitle title={blog.title} />
       <p className='mb-3 text-sm text-center'>
@@ -28,7 +29,7 @@ export default function BlogId({ blog }) {
           <Button title='一覧に戻る' />
         </Link>
       </div>
-    </main>
+    </Container>
   );
 }
 
