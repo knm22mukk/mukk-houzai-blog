@@ -1,11 +1,12 @@
 import BlogCard from '../components/BlogCard';
+import Container from '../components/Container';
 import MyHead from '../components/MyHead';
 import PageTitle from '../components/PageTitle';
 import { client } from '../libs/client';
 
 export default function Blog({ blog }) {
   return (
-    <>
+    <Container>
       <MyHead title='むっく || ブログ一覧' />
       <PageTitle title='Blog' />
       <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
@@ -19,7 +20,7 @@ export default function Blog({ blog }) {
           />
         ))}
       </div>
-    </>
+    </Container>
   );
 }
 

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Container from '../components/Container';
 import MyHead from '../components/MyHead';
 import PageTitle from '../components/PageTitle';
 import SocialIcons from '../components/SocialIcons';
@@ -6,7 +7,7 @@ import siteMetadata from '../data/siteMetadata';
 
 export default function About() {
   return (
-    <>
+    <Container>
       <MyHead title='むっく || 自己紹介ページ' />
       <PageTitle title='About' />
       <div className='xl:grid xl:grid-cols-3 xl:gap-x-8 items-start'>
@@ -51,6 +52,6 @@ export default function About() {
           <p className='pt-4 text-gray-500 '>是非ゆっくり見ていってください。</p>
         </div>
       </div>
-    </>
+    </Container>
   );
 }
