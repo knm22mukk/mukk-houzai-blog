@@ -49,7 +49,7 @@ export default function Contact() {
       const res = await fetch('/api/sendgrid', {
         body: JSON.stringify({
           email: email,
-          namename: name,
+          name: name,
           message: message,
         }),
         headers: {

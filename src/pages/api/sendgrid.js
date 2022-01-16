@@ -27,21 +27,22 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new mail from ${req.body.name}, their email is: ✉️${req.body.email} </h3>
+              <h3>むっくブログから問い合わせメールがありました。</h3>
               <div style="font-size: 16px;">
-              <p>Message:</p>
+              <p>名前:</p>
+              <p>${req.body.name}</p>
+              <p>メールアドレス:</p>
+              <p>${req.body.email}</p>
+              <p>問い合わせ内容:</p>
               <p>${req.body.message}</p>
               <br>
               </div>
-              <img src="https://manuarora.in/logo.png" class="logo-image" style="height: 50px;width: 50px;border-radius: 5px;overflow: hidden;">
-              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Manu Arora<br>Software Developer<br>+91 9587738861</p>
+              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">${siteMetadata.author}</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
-                <a href="https://manuarora.in/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Website</a>
-                <a href="https://manuarora.in/blog/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Blog</a>
-                <a href="https://github.com/manuarora700/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">GitHub</a>
-                <a href="https://instagram.com/maninthere/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
-                <a href="https://linkedin.com/in/manuarora28/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">LinkedIn</a>
-                <a href="https://twitter.com/mannupaaji/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
+                <a href=${siteMetadata.siteUrl} style="text-decoration: none;margin: 8px;color: #9CA3AF;">Website</a>
+                <a href=${siteMetadata.github} style="text-decoration: none;margin: 8px;color: #9CA3AF;">GitHub</a>
+                <a href=${siteMetadata.instagram} style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
+                <a href=${siteMetadata.twitter} style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
 
               </div>
               </div>
