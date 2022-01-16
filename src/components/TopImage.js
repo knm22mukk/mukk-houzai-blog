@@ -4,7 +4,7 @@ import Container from './Container';
 
 export default function Header() {
   return (
-    <section className='flex flex-col justify-center items-center'>
+    <section className='flex flex-col justify-center items-center md:bg-gray-600'>
       <Image
         className='object-cover object-center md:relative mb-10 opacity-50'
         alt='hero'
@@ -12,7 +12,7 @@ export default function Header() {
         height={650}
         width={1280}
       />
-      <div className='md:absolute md:z-50 mt-10 w-full text-center'>
+      <div className='md:absolute md:z-50 mt-10 w-full text-center md:text-white'>
         <Container>
           <h1 className='mb-4 text-4xl font-bold tracking-tight leading-9 text-center'>
             MUKK BLOG

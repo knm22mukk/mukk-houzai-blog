@@ -19,11 +19,9 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <>
-      <TempleteLayout>
-        <Component {...pageProps} />
-      </TempleteLayout>
-    </>
+    <TempleteLayout>
+      <Component {...pageProps} />
+    </TempleteLayout>
   );
 }
 
