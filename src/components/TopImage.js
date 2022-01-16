@@ -4,7 +4,7 @@ import Container from './Container';
 
 export default function Header() {
   return (
-    <section className='flex flex-col justify-center items-center md:bg-gray-600'>
+    <section className='flex flex-col justify-center items-center'>
       <Image
         className='object-cover object-center md:relative mb-10 opacity-50'
         alt='hero'
