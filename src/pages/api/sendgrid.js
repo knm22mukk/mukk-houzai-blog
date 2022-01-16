@@ -1,12 +1,13 @@
 import sendgrid from '@sendgrid/mail';
+import siteMetadata from '../../data/siteMetadata';
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function sendEmail(req, res) {
   try {
     await sendgrid.send({
-      to: 'knm22mukk@gmail.com',
-      from: 'knm22mukk@gmail.com',
+      to: `${siteMetadata.email}`,
+      from: `${siteMetadata.email}`,
       subject: 'むっくブログから問い合わせ',
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="ja">

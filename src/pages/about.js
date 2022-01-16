@@ -23,7 +23,6 @@ export default function About() {
             {siteMetadata.author}
           </h3>
           <div className='flex pt-6 space-x-3'>
-            <SocialIcons kind='mail' href={`mailto:${siteMetadata.email}`} size={10} />
             <SocialIcons kind='twitter' href={siteMetadata.twitter} size={10} />
             <SocialIcons kind='instagram' href={siteMetadata.instagram} size={10} />
             <SocialIcons kind='facebook' href={siteMetadata.facebook} size={10} />
@@ -43,10 +42,11 @@ export default function About() {
             様々な商品が新たに発売していく中で商品情報や、市場の情報をいち早く多く届けたいと思いこのブログサイトを作成しました。
           </p>
           <p className='pt-4 text-gray-500 '>
-            商品に関するお問い合わせなどご連絡を頂ける場合は、メールのアイコンからメールをお送りいただくか、
-            SNSからDMをお送りいただければ幸いです。
+            何かお気づきのことがございましたら、お問い合わせページからお問い合わせいただくか
             <br />
-            フォローもよろしくお願いいたします。
+            SNSよりDMをお送りください。
+            <br />
+            SNSのフォローもよろしくお願いいたします。
             <br />
           </p>
           <p className='pt-4 text-gray-500 '>是非ゆっくり見ていってください。</p>

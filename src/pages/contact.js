@@ -36,7 +36,6 @@ export default function Contact() {
     }
 
     setErrors({ ...tempErrors });
-    console.log('errors', errors);
     return isValid;
   };
 
@@ -61,7 +60,6 @@ export default function Contact() {
 
       const { error } = await res.json();
       if (error) {
-        console.log(error);
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
         setButtonText('送信する');
@@ -71,7 +69,6 @@ export default function Contact() {
       setShowFailureMessage(false);
       setButtonText('送信する');
     }
-    console.log(name, email, message);
   };
 
   return (
