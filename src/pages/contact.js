@@ -4,6 +4,7 @@ import { CgProfile } from 'react-icons/cg';
 import { HiOutlineMail } from 'react-icons/hi';
 import Button from '../components/Button';
 import Container from '../components/Container';
+import MyHead from '../components/MyHead';
 import PageTitle from '../components/PageTitle';
 
 export default function Contact() {
@@ -73,6 +74,7 @@ export default function Contact() {
 
   return (
     <Container>
+      <MyHead title='むっく || お問い合わせページ' />
       <PageTitle title='お問い合わせ' />
       <p className='mb-10 text-sm text-center text-gray-500'>
         ブログ記事に関すること、ブログ運営に関することなど何でもお気軽にお問い合わせください。
