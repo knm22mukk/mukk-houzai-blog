@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import BreadCrumbs from '../components/Breadcrumbs';
 import Container from '../components/Container';
 import MyHead from '../components/MyHead';
 import PageTitle from '../components/PageTitle';
@@ -9,6 +10,17 @@ export default function About() {
   return (
     <Container>
       <MyHead title='むっく || 自己紹介ページ' />
+      <BreadCrumbs
+        lists={[
+          {
+            string: 'トップページ',
+            path: '/',
+          },
+          {
+            string: '自己紹介',
+          },
+        ]}
+      />
       <PageTitle title='About' />
       <div className='xl:grid xl:grid-cols-3 xl:gap-x-8 items-start'>
         <div className='flex flex-col items-center'>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BiMessageRoundedEdit } from 'react-icons/bi';
 import { CgProfile } from 'react-icons/cg';
 import { HiOutlineMail } from 'react-icons/hi';
+import BreadCrumbs from '../components/Breadcrumbs';
 import Button from '../components/Button';
 import Container from '../components/Container';
 import MyHead from '../components/MyHead';
@@ -75,7 +76,18 @@ export default function Contact() {
   return (
     <Container>
       <MyHead title='むっく || お問い合わせページ' />
-      <PageTitle title='お問い合わせ' />
+      <BreadCrumbs
+        lists={[
+          {
+            string: 'トップページ',
+            path: '/',
+          },
+          {
+            string: 'お問い合わせ',
+          },
+        ]}
+      />
+      <PageTitle title='Contact' />
       <p className='mb-10 text-sm text-center text-gray-500'>
         ブログ記事に関すること、ブログ運営に関することなど何でもお気軽にお問い合わせください。
         <br />

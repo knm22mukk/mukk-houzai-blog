@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import BreadCrumbs from '../../components/Breadcrumbs';
 import Button from '../../components/Button';
 import Container from '../../components/Container';
 import Date from '../../components/Date';
@@ -11,6 +12,21 @@ export default function BlogId({ blog }) {
   return (
     <Container>
       <MyHead title={`むっく || ${blog.title}`} />
+      <BreadCrumbs
+        lists={[
+          {
+            string: 'トップページ',
+            path: '/',
+          },
+          {
+            string: 'ブログ記事一覧',
+            path: '/blog',
+          },
+          {
+            string: blog.title,
+          },
+        ]}
+      />
       <PageTitle title={blog.title} />
       <p className='mb-3 text-sm text-center'>
         <Date dateString={blog.publishedAt} />
