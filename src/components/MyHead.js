@@ -11,15 +11,13 @@ export default function MyHead({ title, description, keywords, canonical }) {
   return (
     <Head>
       <title>{outputTitle}</title>
-      <meta charSet='utf-8' />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
 
       <meta name='description' content={outputDescription} />
       <meta name='keywords' content={outputKeywords} />
 
       <meta property='og:title' content={outputTitle} />
       <meta property='og:description' content={outputDescription} />
-      <meta property='og:site_name' content='包装資材営業マンむっくのブログサイト' />
+      <meta property='og:site_name' content={siteMetadata.title} />
       <meta property='og:image' content='/images/logo.png' />
 
       <meta name='twitter:card' content='summary' />
@@ -30,7 +28,7 @@ export default function MyHead({ title, description, keywords, canonical }) {
 
       <link rel='canonical' href={outputCanonical} />
 
-      <link rel='shortcut icon' href='/images/favicon.png' />
+      <link rel='shortcut icon' href='/favicon.png' />
     </Head>
   );
 }

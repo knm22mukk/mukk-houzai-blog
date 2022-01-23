@@ -1,9 +1,9 @@
-import BlogCard from '../components/BlogCard';
-import BreadCrumbs from '../components/Breadcrumbs';
-import Container from '../components/Container';
-import MyHead from '../components/MyHead';
-import PageTitle from '../components/PageTitle';
-import { client } from '../libs/client';
+import BlogCard from '../../components/BlogCard';
+import BreadCrumbs from '../../components/Breadcrumbs';
+import Container from '../../components/Container';
+import MyHead from '../../components/MyHead';
+import PageTitle from '../../components/PageTitle';
+import { client } from '../../libs/client';
 
 export default function Blog({ blog }) {
   return (
