@@ -5,17 +5,10 @@ import headerNavLinks from '../data/headerNavLinks';
 import Link from './Link';
 
 export default function MobileNav() {
-  const [navShow, setNavShow] = useState(false);
+  const [active, setActive] = useState(false);
 
-  const onToggleNav = () => {
-    setNavShow((status) => {
-      if (status) {
-        document.body.style.overflow = 'auto';
-      } else {
-        document.body.style.overflow = 'hidden';
-      }
-      return !status;
-    });
+  const handleClick = () => {
+    setActive(!active);
   };
 
   return (
@@ -24,20 +17,20 @@ export default function MobileNav() {
         type='button'
         className='m-2 w-10 h-10 text-3xl'
         area-label='ToggleMenu'
-        onClick={onToggleNav}
+        onClick={handleClick}
       >
-        {navShow ? <MdClear /> : <GiHamburgerMenu />}
+        {active ? <MdClear /> : <GiHamburgerMenu />}
       </button>
       <div
         className={`fixed w-full h-full top-32 right-0 bg-gray-200 opacity-95 z-10 transform ease-in-out duration-100 ${
-          navShow ? 'translate-x-0' : 'translate-x-full'
+          active ? 'block' : 'hidden'
         }`}
       >
         <button
           type='button'
           aria-label='toggle modal'
           className='fixed w-full h-full cursor-auto focus:outline-none'
-          onClick={onToggleNav}
+          onClick={handleClick}
         ></button>
         <nav className='fixed mt-8 h-full'>
           {headerNavLinks.map((link) => (
@@ -45,7 +38,7 @@ export default function MobileNav() {
               <Link
                 href={link.href}
                 className='text-2xl font-bold tracking-widest'
-                onClick={onToggleNav}
+                onClick={handleClick}
               >
                 {link.title}
               </Link>

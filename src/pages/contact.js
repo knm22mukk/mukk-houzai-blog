@@ -109,14 +109,14 @@ export default function Contact() {
             </p>
           )}
         </div>
-        <label htmlFor='name' className='mt-8 font-light text-gray-500'>
+        <label htmlFor='name' className='mt-8 mb-2 font-light text-gray-500'>
           <CgProfile className='inline-flex mr-2' />
           お名前<span className='text-red-500'>*</span>
         </label>
         <input
           type='text'
           name='name'
-          className='py-2 pl-4 font-light text-gray-500 bg-transparent focus:rounded-md border-b focus:ring-1 ring-green-500 focus:outline-none'
+          className='py-1 px-3 w-full text-base leading-8 text-gray-700 bg-gray-100 focus:bg-white bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-colors duration-200 ease-in-out outline-none'
           value={name}
           onChange={(e) => {
             setName(e.target.value);
@@ -124,14 +124,14 @@ export default function Contact() {
         />
         {errors?.name && <p className='text-red-500'>お名前は入力必須です。</p>}
 
-        <label htmlFor='email' className='mt-8 font-light text-gray-500'>
+        <label htmlFor='email' className='mt-8 mb-2 font-light text-gray-500'>
           <HiOutlineMail className='inline-flex mr-2' />
           メールアドレス<span className='text-red-500'>*</span>
         </label>
         <input
           type='text'
           name='email'
-          className='py-2 pl-4 font-light text-gray-500 bg-transparent focus:rounded-md border-b focus:ring-1 ring-green-500 focus:outline-none'
+          className='py-1 px-3 w-full text-base leading-8 text-gray-700 bg-gray-100 focus:bg-white bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-colors duration-200 ease-in-out outline-none'
           value={email}
           onChange={(e) => {
             setEmail(e.target.value);
@@ -139,7 +139,7 @@ export default function Contact() {
         />
         {errors?.email && <p className='text-red-500'>メールアドレスは入力必須です。</p>}
 
-        <label htmlFor='message' className='mt-8 font-light text-gray-500'>
+        <label htmlFor='message' className='mt-8 mb-2 font-light text-gray-500'>
           <BiMessageRoundedEdit className='inline-flex mr-2' />
           お問い合わせ内容<span className='text-red-500'>*</span>
         </label>
@@ -147,7 +147,7 @@ export default function Contact() {
           rows='5'
           type='text'
           name='message'
-          className='py-2 pl-4 font-light text-gray-500 bg-transparent focus:rounded-md border-b focus:ring-1 ring-green-500 focus:outline-none'
+          className='py-1 px-3 w-full h-32 text-base leading-6 text-gray-700 bg-gray-100 focus:bg-white bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-colors duration-200 ease-in-out outline-none resize-none'
           value={message}
           onChange={(e) => {
             setMessage(e.target.value);

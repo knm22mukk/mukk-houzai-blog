@@ -31,15 +31,17 @@ export default function BlogId({ blog }) {
       <p className='mb-3 text-sm text-center'>
         <Date dateString={blog.publishedAt} />
       </p>
-      <div className='text-center'>
-        <Image src={blog.image.url} width={400} height={400} alt={`${blog.title}イメージ`} />
+      <div className='p-5 bg-white rounded-lg shadow-xl'>
+        <div className='text-center'>
+          <Image src={blog.image.url} width={400} height={400} alt={`${blog.title}イメージ`} />
+        </div>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `${blog.body}`,
+          }}
+          className='pt-10 prose'
+        />
       </div>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${blog.body}`,
-        }}
-        className='pt-10 prose'
-      />
       <div className='pt-10'>
         <Link href='/blog'>
           <Button title='一覧に戻る' />

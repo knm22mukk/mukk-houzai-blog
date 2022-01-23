@@ -25,7 +25,7 @@ export default function Header() {
       </div>
       <div className='md:absolute md:z-50 mt-10 w-full text-center md:text-white'>
         <Container>
-          <h1 className='mb-4 text-4xl font-bold tracking-tight leading-9 text-center'>
+          <h1 className='mb-4 text-4xl font-bold tracking-tight leading-9 md:leading-loose text-center'>
             MUKK BLOG
           </h1>
           <p className='mb-8 leading-relaxed'>
