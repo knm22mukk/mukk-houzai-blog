@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: 'MUKK BLOG',
   description: '包装資材営業マンむっくが商品情報などを発信する個人ブログサイトです。',
   language: 'ja-JP',
-  siteUrl: 'https://mukk-houzai-blog.vercel.app/',
+  siteUrl: 'https://mukk-blog.net',
   siteLogo: 'public/images/logo.png',
   image: 'public/images/logo.png',
   socialBanner: 'public/images/twitter_header_photo_2.png',
