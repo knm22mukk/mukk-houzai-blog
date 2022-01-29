@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Button from './Button';
 import Container from './Container';
+import Link from './Link';
 
 export default function Header() {
   return (
@@ -35,7 +36,9 @@ export default function Header() {
             <br />
             SNSでも発信していきますので良ければフォローお願いします。
           </p>
-          <Button title='記事一覧' className='hidden sm:block' />
+          <Link href='/blog'>
+            <Button title='記事一覧' className='hidden sm:block' />
+          </Link>
         </Container>
       </div>
     </section>

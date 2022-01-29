@@ -15,7 +15,10 @@ export default function Footer() {
           <div>{`© ${new Date().getFullYear()}`}</div>
           <Link href='/'>{siteMetadata.title}</Link>
         </div>
-        <div className='mb-10 text-sm'>
+        <div className='mb-3 text-sm'>
+          <Link href='/privacypolicy'>プライバシーポリシー</Link>
+        </div>
+        <div className='mb-3 text-sm'>
           <Link href={siteMetadata.github}>{siteMetadata.headerTitle}</Link>
         </div>
       </div>
