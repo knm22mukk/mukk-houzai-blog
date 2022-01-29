@@ -75,6 +75,11 @@ class MyDocument extends Document {
               />
             </>
           )}
+
+          <meta
+            name='google-site-verification'
+            content='DBMn2-s718dLfuIuNx2w-brSKq-NlgtHPTHBxWJWkhE'
+          />
         </Head>
         <body>
           <Main />
