@@ -14,6 +14,11 @@ class MyDocument extends Document {
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
 
+          <meta
+            name='google-site-verification'
+            content='DEiylquI5g8ddrrmXiJ-y6wxPw5Ixb0J2i9eepmGkvY'
+          />
+
           <link rel='apple-touch-icon' sizes='57x57' href='/images/apple-touch-icon-57x57.png' />
           <link rel='apple-touch-icon' sizes='60x60' href='/images/apple-touch-icon-60x60.png' />
           <link rel='apple-touch-icon' sizes='72x72' href='/images/apple-touch-icon-72x72.png' />
