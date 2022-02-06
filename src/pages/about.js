@@ -35,7 +35,7 @@ export default function About() {
             <h3 className='pt-4 pb-2 text-2xl font-bold tracking-tight leading-8'>
               {siteMetadata.author}
             </h3>
-            <div className='flex pt-6 space-x-3'>
+            <div className='flex pt-6 space-x-5'>
               <SocialIcons kind='twitter' href={siteMetadata.twitter} size={10} />
               <SocialIcons kind='instagram' href={siteMetadata.instagram} size={10} />
               <SocialIcons kind='facebook' href={siteMetadata.facebook} size={10} />
