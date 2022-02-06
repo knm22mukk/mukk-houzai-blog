@@ -11,15 +11,15 @@ export default function Footer() {
           <SocialIcons kind='instagram' href={siteMetadata.instagram} />
           <SocialIcons kind='facebook' href={siteMetadata.facebook} />
         </div>
-        <div className='flex my-2 space-x-2 text-sm'>
-          <div>{`© ${new Date().getFullYear()}`}</div>
-          <Link href='/'>{siteMetadata.title}</Link>
-        </div>
         <div className='mb-3 text-sm'>
           <Link href='/privacypolicy'>プライバシーポリシー</Link>
         </div>
         <div className='mb-3 text-sm'>
           <Link href={siteMetadata.github}>{siteMetadata.headerTitle}</Link>
+        </div>
+        <div className='flex my-2 space-x-2 text-sm'>
+          <div>{`© ${new Date().getFullYear()}`}</div>
+          <Link href='/'>{siteMetadata.title}</Link>
         </div>
       </div>
     </footer>
