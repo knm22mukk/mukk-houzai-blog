@@ -1,12 +1,13 @@
 import Head from 'next/head';
 import siteMetadata from '../data/siteMetadata';
 
-export default function MyHead({ title, description, keywords, canonical }) {
+export default function MyHead({ title, description, keywords, canonical, pageImage }) {
   const outputTitle = title || `${siteMetadata.title}`;
   const outputDescription = description || `${siteMetadata.description}`;
   const outputKeywords =
     keywords || '包装資材、包材、衛生、使い捨て、消耗品、不織布、食器、洗剤、厨房、';
   const outputCanonical = canonical || `${siteMetadata.siteUrl}`;
+  const outputImage = pageImage || '/images/logo.png';
 
   return (
     <Head>
@@ -20,13 +21,13 @@ export default function MyHead({ title, description, keywords, canonical }) {
       <meta property='og:title' content={outputTitle} />
       <meta property='og:description' content={outputDescription} />
       <meta property='og:site_name' content={siteMetadata.title} />
-      <meta property='og:image' content='/images/logo.png' />
+      <meta property='og:image' content={outputImage} />
 
       <meta name='twitter:card' content='summary' />
       <meta name='twitter:site' content='@mukk_houzai' />
       <meta name='twitter:title' content={outputTitle} />
       <meta name='twitter:description' content={outputDescription} />
-      <meta name='twitter:image' content='/images/logo.png' />
+      <meta name='twitter:image' content={outputImage} />
 
       <link rel='canonical' href={outputCanonical} />
 

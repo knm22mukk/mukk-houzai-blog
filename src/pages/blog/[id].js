@@ -11,7 +11,11 @@ import { client } from '../../libs/client';
 export default function BlogId({ blog }) {
   return (
     <Container>
-      <MyHead title={`むっく || ${blog.title}`} />
+      <MyHead
+        title={`むっく || ${blog.title}`}
+        description={blog.description}
+        pageImage={blog.image.url}
+      />
       <BreadCrumbs
         lists={[
           {
