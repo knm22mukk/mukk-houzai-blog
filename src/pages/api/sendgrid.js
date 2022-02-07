@@ -17,7 +17,7 @@ async function sendEmail(req, res) {
         <title>The HTML5 Herald</title>
         <meta name="description" content="The HTML5 Herald">
         <meta name="author" content="SitePoint">
-      <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
 
         <link rel="stylesheet" href="css/styles.css?v=1.0">
 

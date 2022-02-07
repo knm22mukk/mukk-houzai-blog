@@ -16,7 +16,7 @@ export default function Blog({ blog }) {
             path: '/',
           },
           {
-            string: 'ブログ記事一覧',
+            string: 'ブログ',
           },
         ]}
       />

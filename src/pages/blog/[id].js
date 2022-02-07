@@ -23,7 +23,7 @@ export default function BlogId({ blog }) {
             path: '/',
           },
           {
-            string: 'ブログ記事一覧',
+            string: 'ブログ',
             path: '/blog',
           },
           {

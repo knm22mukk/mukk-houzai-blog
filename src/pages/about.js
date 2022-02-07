@@ -9,7 +9,7 @@ import siteMetadata from '../data/siteMetadata';
 export default function About() {
   return (
     <Container>
-      <MyHead title='むっく || 自己紹介ページ' />
+      <MyHead title='むっく || 自己紹介' />
       <BreadCrumbs
         lists={[
           {

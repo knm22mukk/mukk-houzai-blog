@@ -75,7 +75,7 @@ export default function Contact() {
 
   return (
     <Container>
-      <MyHead title='むっく || お問い合わせページ' />
+      <MyHead title='むっく || お問い合わせ' />
       <BreadCrumbs
         lists={[
           {
