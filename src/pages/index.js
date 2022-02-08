@@ -30,7 +30,7 @@ export default function Home({ blog }) {
             ))}
           </div>
           <div className='flex justify-center mt-10'>
-            <Link href='/blog'>
+            <Link href='/blog/page/1'>
               <Button title='記事一覧' />
             </Link>
           </div>

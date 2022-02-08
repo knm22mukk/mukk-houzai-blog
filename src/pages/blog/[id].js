@@ -24,7 +24,7 @@ export default function BlogId({ blog }) {
           },
           {
             string: 'ブログ',
-            path: '/blog',
+            path: '/blog/page/1',
           },
           {
             string: blog.title,
@@ -47,7 +47,7 @@ export default function BlogId({ blog }) {
         />
       </div>
       <div className='pt-10'>
-        <Link href='/blog'>
+        <Link href='/blog/page/1'>
           <Button title='一覧に戻る' />
         </Link>
       </div>

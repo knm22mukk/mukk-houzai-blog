@@ -36,7 +36,7 @@ export default function Header() {
             <br />
             SNSでも発信していきますので良ければフォローお願いします。
           </p>
-          <Link href='/blog'>
+          <Link href='/blog/page/1'>
             <Button title='記事一覧' className='hidden sm:block' />
           </Link>
         </Container>
