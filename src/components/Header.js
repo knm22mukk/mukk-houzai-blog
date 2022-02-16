@@ -10,7 +10,7 @@ export default function Header() {
       <Link href='/' aria-label='包装資材営業マンむっくのブログサイト'>
         <div className='flex justify-between items-center'>
           <Image
-            src='/images/logo.png'
+            src='/images/logo70x70.png'
             width={70}
             height={70}
             alt='logo'
