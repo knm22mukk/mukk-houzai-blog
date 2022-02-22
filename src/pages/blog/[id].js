@@ -35,7 +35,7 @@ export default function BlogId({ blog }) {
       <p className='mb-3 text-sm text-center'>
         <Date dateString={blog.publishedAt} />
       </p>
-      <div className='p-5 bg-white rounded-lg shadow-xl'>
+      <article className='sm:py-10 px-2 md:px-6 xl:px-0 mx-auto max-w-xl md:max-w-2xl xl:max-w-3xl bg-white rounded-lg shadow-xl'>
         <div className='text-center'>
           <Image src={blog.image.url} width={400} height={400} alt={`${blog.title}イメージ`} />
         </div>
@@ -43,9 +43,9 @@ export default function BlogId({ blog }) {
           dangerouslySetInnerHTML={{
             __html: `${blog.body}`,
           }}
-          className='pt-10 prose'
+          className='prose'
         />
-      </div>
+      </article>
       <div className='pt-10'>
         <Link href='/blog/page/1'>
           <Button title='一覧に戻る' />
