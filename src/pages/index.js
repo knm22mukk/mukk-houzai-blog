@@ -12,7 +12,7 @@ export default function Home({ blog }) {
     <>
       <MyHead />
       <TopImage />
-      <div className='pt-24 bg-gray-100'>
+      <div className='bg-gray-100'>
         <Container>
           <div className='pb-10'>
             <h2 className='text-4xl font-bold tracking-tight leading-9 text-center'>最新記事</h2>
