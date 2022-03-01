@@ -5,13 +5,13 @@ import Link from './Link';
 export default function BlogCard({ title, publishedAt, href, imageSrc }) {
   return (
     <Link href={href}>
-      <div className='p-4 mx-auto mt-6 w-72 sm:w-64 md:w-56 bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-100'>
-        <Image src={imageSrc} width={640} height={360} alt={title} />
-        <div className='mt-4 text-center'>
-          <h2 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600'>
+      <div className='mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md'>
+        <Image src={imageSrc} width={640} height={360} alt={title} className='rounded-t-lg' />
+        <div className='p-3'>
+          <h4 className='mb-2 text-xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600'>
             {title}
-          </h2>
-          <p className='mt-2 text-gray-600'>
+          </h4>
+          <p className='mt-2 text-gray-500'>
             <Date dateString={publishedAt} />
           </p>
         </div>
