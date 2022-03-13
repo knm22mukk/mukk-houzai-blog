@@ -3,6 +3,7 @@ import Button from '../components/Button';
 import Link from '../components/Link';
 import MyHead from '../components/MyHead';
 import News from '../components/News';
+import ShareButton from '../components/ShareButton';
 import TopImage from '../components/TopImage';
 import { client } from '../libs/client';
 
@@ -11,7 +12,7 @@ export default function Home({ blog }) {
     <>
       <MyHead />
       <TopImage />
-      <div className='p-5 my-10 bg-gray-100 rounded-lg'>
+      <div className='p-5 my-10'>
         <div className='py-10'>
           <h2 className='text-4xl font-bold tracking-tight leading-9 text-center'>最新記事</h2>
         </div>
@@ -34,6 +35,7 @@ export default function Home({ blog }) {
         </div>
       </div>
       <News />
+      <ShareButton url='https://mukk-blog.net/' title='むっくの包装資材ブログ' />
     </>
   );
 }
