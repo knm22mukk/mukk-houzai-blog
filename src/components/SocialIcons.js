@@ -1,8 +1,6 @@
 import { FaFacebook, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
 
 const components = {
-  mail: HiOutlineMail,
   github: FaGithub,
   facebook: FaFacebook,
   twitter: FaTwitter,
@@ -10,9 +8,6 @@ const components = {
 };
 
 const SocialIcons = ({ kind, href }) => {
-  if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
-    return null;
-
   const SocialIcon = components[kind];
 
   return (

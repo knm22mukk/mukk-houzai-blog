@@ -1,12 +1,11 @@
 import BreadCrumbs from '../components/Breadcrumbs';
-import Container from '../components/Container';
 import MyHead from '../components/MyHead';
 import PageTitle from '../components/PageTitle';
 import Privacy from '../components/Privacy';
 
 export default function PrivacyPolicy() {
   return (
-    <Container>
+    <>
       <MyHead title='むっく || プライバシーポリシー' />
       <BreadCrumbs
         lists={[
@@ -21,6 +20,6 @@ export default function PrivacyPolicy() {
       />
       <PageTitle title='プライバシーポリシー' />
       <Privacy />
-    </Container>
+    </>
   );
 }

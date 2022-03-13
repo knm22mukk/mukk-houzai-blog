@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import BreadCrumbs from '../../components/Breadcrumbs';
 import Button from '../../components/Button';
-import Container from '../../components/Container';
 import Date from '../../components/Date';
 import Link from '../../components/Link';
 import MyHead from '../../components/MyHead';
@@ -10,7 +9,7 @@ import { client } from '../../libs/client';
 
 export default function BlogId({ blog }) {
   return (
-    <Container>
+    <>
       <MyHead
         title={`むっく || ${blog.title}`}
         description={blog.description}
@@ -46,12 +45,12 @@ export default function BlogId({ blog }) {
           className='p-3 sm:p-10 prose'
         />
       </article>
-      <div className='pt-10'>
+      <div className='pt-10 text-center'>
         <Link href='/blog/page/1'>
           <Button title='一覧に戻る' />
         </Link>
       </div>
-    </Container>
+    </>
   );
 }
 

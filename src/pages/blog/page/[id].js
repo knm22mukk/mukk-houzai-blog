@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import BlogCard from '../../../components/BlogCard';
 import BreadCrumbs from '../../../components/Breadcrumbs';
-import Container from '../../../components/Container';
 import MyHead from '../../../components/MyHead';
 import PageTitle from '../../../components/PageTitle';
 import Pagination from '../../../components/Pagination';
@@ -11,7 +10,7 @@ const PER_PAGE = 12;
 
 export default function BlogPage({ blog, totalCount }) {
   return (
-    <Container>
+    <>
       <MyHead title='むっく || ブログ一覧' />
       <BreadCrumbs
         lists={[
@@ -37,7 +36,7 @@ export default function BlogPage({ blog, totalCount }) {
         ))}
       </div>
       <Pagination totalCount={totalCount} />
-    </Container>
+    </>
   );
 }
 

@@ -1,11 +1,8 @@
 import Image from 'next/image';
-import Button from './Button';
-import Container from './Container';
-import Link from './Link';
 
-export default function Header() {
+export default function HeroImage() {
   return (
-    <Container>
+    <>
       <div className='hidden sm:block'>
         <Image
           src='/images/mukkblog_topimage_1280x700.webp'
@@ -22,6 +19,6 @@ export default function Header() {
           alt='mukk_blog_image'
         />
       </div>
-    </Container>
+    </>
   );
 }

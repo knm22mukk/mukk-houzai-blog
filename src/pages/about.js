@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import BreadCrumbs from '../components/Breadcrumbs';
-import Container from '../components/Container';
 import MyHead from '../components/MyHead';
 import PageTitle from '../components/PageTitle';
 import SocialIcons from '../components/SocialIcons';
@@ -8,7 +7,7 @@ import siteMetadata from '../data/siteMetadata';
 
 export default function About() {
   return (
-    <Container>
+    <>
       <MyHead title='むっく || 自己紹介' />
       <BreadCrumbs
         lists={[
@@ -66,6 +65,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </Container>
+    </>
   );
 }

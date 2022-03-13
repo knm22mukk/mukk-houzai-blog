@@ -1,6 +1,5 @@
 import BlogCard from '../components/BlogCard';
 import Button from '../components/Button';
-import Container from '../components/Container';
 import Link from '../components/Link';
 import MyHead from '../components/MyHead';
 import News from '../components/News';
@@ -12,29 +11,27 @@ export default function Home({ blog }) {
     <>
       <MyHead />
       <TopImage />
-      <div className='bg-gray-100'>
-        <Container>
-          <div className='pb-10'>
-            <h2 className='text-4xl font-bold tracking-tight leading-9 text-center'>最新記事</h2>
-          </div>
-          <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 xl:px-24'>
-            {blog.map((blog) => (
-              <BlogCard
-                key={blog.id}
-                imageSrc={blog.image.url}
-                title={blog.title}
-                description={blog.description}
-                href={`/blog/${blog.id}`}
-                publishedAt={blog.publishedAt}
-              />
-            ))}
-          </div>
-          <div className='flex justify-center mt-10'>
-            <Link href='/blog/page/1'>
-              <Button title='記事一覧' />
-            </Link>
-          </div>
-        </Container>
+      <div className='p-5 my-10 bg-gray-100 rounded-lg'>
+        <div className='py-10'>
+          <h2 className='text-4xl font-bold tracking-tight leading-9 text-center'>最新記事</h2>
+        </div>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 xl:px-24'>
+          {blog.map((blog) => (
+            <BlogCard
+              key={blog.id}
+              imageSrc={blog.image.url}
+              title={blog.title}
+              description={blog.description}
+              href={`/blog/${blog.id}`}
+              publishedAt={blog.publishedAt}
+            />
+          ))}
+        </div>
+        <div className='flex justify-center mt-10'>
+          <Link href='/blog/page/1'>
+            <Button title='記事一覧' />
+          </Link>
+        </div>
       </div>
       <News />
     </>

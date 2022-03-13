@@ -4,7 +4,6 @@ import { CgProfile } from 'react-icons/cg';
 import { HiOutlineMail } from 'react-icons/hi';
 import BreadCrumbs from '../components/Breadcrumbs';
 import Button from '../components/Button';
-import Container from '../components/Container';
 import MyHead from '../components/MyHead';
 import PageTitle from '../components/PageTitle';
 
@@ -74,7 +73,7 @@ export default function Contact() {
   };
 
   return (
-    <Container>
+    <>
       <MyHead title='むっく || お問い合わせ' />
       <BreadCrumbs
         lists={[
@@ -159,6 +158,6 @@ export default function Contact() {
           <Button title={buttonText} />
         </div>
       </form>
-    </Container>
+    </>
   );
 }
