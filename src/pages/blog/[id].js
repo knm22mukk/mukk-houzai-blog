@@ -5,6 +5,7 @@ import Date from '../../components/Date';
 import Link from '../../components/Link';
 import MyHead from '../../components/MyHead';
 import PageTitle from '../../components/PageTitle';
+import ShareButton from '../../components/ShareButton';
 import { client } from '../../libs/client';
 
 export default function BlogId({ blog }) {
@@ -42,13 +43,14 @@ export default function BlogId({ blog }) {
           dangerouslySetInnerHTML={{
             __html: `${blog.body}`,
           }}
-          className='p-3 sm:p-10 prose'
+          className='p-3 prose'
         />
       </article>
       <div className='pt-10 text-center'>
         <Link href='/blog/page/1'>
           <Button title='一覧に戻る' />
         </Link>
+        <ShareButton url={`https://mukk-blog.net/blog/${blog.id}`} title={blog.title} />
       </div>
     </>
   );
