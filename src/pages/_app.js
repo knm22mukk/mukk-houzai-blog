@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import { ThemeProvider } from 'next-themes';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import TempleteLayout from '../components/TempleteLayout';
@@ -19,9 +20,11 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <TempleteLayout>
-      <Component {...pageProps} />
-    </TempleteLayout>
+    <ThemeProvider attribute='class' defaultTheme='light'>
+      <TempleteLayout>
+        <Component {...pageProps} />
+      </TempleteLayout>
+    </ThemeProvider>
   );
 }
 

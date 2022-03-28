@@ -35,7 +35,7 @@ export default function BlogId({ blog }) {
       <p className='mb-3 text-sm text-center'>
         <Date dateString={blog.publishedAt} />
       </p>
-      <article className='sm:py-10 px-2 md:px-6 xl:px-0 mx-auto max-w-xl md:max-w-2xl xl:max-w-3xl bg-white rounded-lg shadow-xl'>
+      <article className='sm:py-10 px-2 md:px-6 xl:px-0 mx-auto max-w-xl md:max-w-2xl xl:max-w-3xl bg-white dark:bg-gray-400 rounded-lg shadow-xl'>
         <div className='px-5 text-center'>
           <Image src={blog.image.url} width={1280} height={720} alt={`${blog.title}イメージ`} />
         </div>

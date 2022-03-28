@@ -6,11 +6,9 @@ export default function TempleteLayout({ children }) {
   return (
     <>
       <Header />
-      <main className='bg-gray-100'>
-        <div className='px-4 sm:px-6 xl:px-0 pb-10 mx-auto mb-auto max-w-3xl xl:max-w-5xl text-gray-900'>
-          {children}
-          <ScrollTop />
-        </div>
+      <main className='px-4 sm:px-6 xl:px-0 pb-10 mx-auto mb-auto max-w-3xl xl:max-w-5xl'>
+        {children}
+        <ScrollTop />
       </main>
       <Footer />
     </>

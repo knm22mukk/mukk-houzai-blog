@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import headerNavLinks from '../data/headerNavLinks';
 import siteMetadata from '../data/siteMetadata';
+import { ChangeThemeButton } from './ChangeThemeButton';
 import Link from './Link';
 import MobileNav from './MobileNav';
 
 export default function Header() {
   return (
-    <header className='flex justify-around items-center py-10 h-32 text-gray-900 shadow-lg'>
+    <header className='flex justify-around items-center py-10 h-32 bg-white dark:bg-gray-800 shadow-lg'>
       <Link href='/' aria-label='包装資材営業マンむっくのブログサイト'>
         <div className='flex justify-between items-center'>
           <Image
@@ -30,6 +31,7 @@ export default function Header() {
           ))}
         </div>
         <MobileNav />
+        <ChangeThemeButton />
       </div>
     </header>
   );

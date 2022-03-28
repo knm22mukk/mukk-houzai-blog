@@ -21,7 +21,7 @@ export default function About() {
         ]}
       />
       <PageTitle title='About' />
-      <div className='py-10 px-5 bg-white rounded-lg shadow-xl'>
+      <div className='py-10 px-5 bg-white dark:bg-gray-800 rounded-lg shadow-xl'>
         <div className='xl:grid xl:grid-cols-3 xl:gap-x-8 items-start'>
           <div className='flex flex-col items-center'>
             <Image

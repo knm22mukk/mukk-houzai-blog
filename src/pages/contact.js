@@ -94,7 +94,7 @@ export default function Contact() {
       </p>
       <form
         onSubmit={handleSubmit}
-        className='flex flex-col py-8 px-8 mx-auto bg-white rounded-lg shadow-xl'
+        className='flex flex-col py-8 px-8 mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-xl'
       >
         <div className='text-left'>
           {showSuccessMessage && (

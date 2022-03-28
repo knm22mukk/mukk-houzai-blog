@@ -86,7 +86,7 @@ class MyDocument extends Document {
             content='DBMn2-s718dLfuIuNx2w-brSKq-NlgtHPTHBxWJWkhE'
           />
         </Head>
-        <body>
+        <body className='bg:text-white bg-gray-100 dark:bg-gray-800'>
           <Main />
           <NextScript />
         </body>
