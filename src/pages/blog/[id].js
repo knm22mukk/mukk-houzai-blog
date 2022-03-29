@@ -6,15 +6,17 @@ import Link from '../../components/Link';
 import MyHead from '../../components/MyHead';
 import PageTitle from '../../components/PageTitle';
 import ShareButton from '../../components/ShareButton';
+import siteMetadata from '../../data/siteMetadata';
 import { client } from '../../libs/client';
 
 export default function BlogId({ blog }) {
   return (
     <>
       <MyHead
-        title={`むっく || ${blog.title}`}
-        description={blog.description}
+        pageTitle={`むっく || ${blog.title}`}
+        pageDescription={blog.description}
         pageImage={blog.image.url}
+        pagePath={`${siteMetadata.siteUrl}/blog/${blog.id}`}
       />
       <BreadCrumbs
         lists={[
@@ -50,7 +52,7 @@ export default function BlogId({ blog }) {
         <Link href='/blog/page/1'>
           <Button title='一覧に戻る' />
         </Link>
-        <ShareButton url={`https://mukk-blog.net/blog/${blog.id}`} title={blog.title} />
+        <ShareButton url={`${siteMetadata.siteUrl}/blog/${blog.id}`} title={blog.title} />
       </div>
     </>
   );

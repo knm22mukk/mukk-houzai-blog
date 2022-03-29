@@ -6,6 +6,7 @@ import BreadCrumbs from '../components/Breadcrumbs';
 import Button from '../components/Button';
 import MyHead from '../components/MyHead';
 import PageTitle from '../components/PageTitle';
+import siteMetadata from '../data/siteMetadata';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -74,7 +75,11 @@ export default function Contact() {
 
   return (
     <>
-      <MyHead title='むっく || お問い合わせ' />
+      <MyHead
+        pageTitle='むっく || お問い合わせ'
+        pageDescription='包装資材営業マンむっくのお問い合わせページ　お問い合わせはこちらからお願いします'
+        pagePath={`${siteMetadata.siteUrl}/contact`}
+      />
       <BreadCrumbs
         lists={[
           {

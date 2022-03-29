@@ -4,6 +4,7 @@ import BreadCrumbs from '../../../components/Breadcrumbs';
 import MyHead from '../../../components/MyHead';
 import PageTitle from '../../../components/PageTitle';
 import Pagination from '../../../components/Pagination';
+import siteMetadata from '../../../data/siteMetadata';
 import { client } from '../../../libs/client';
 
 const PER_PAGE = 12;
@@ -11,7 +12,11 @@ const PER_PAGE = 12;
 export default function BlogPage({ blog, totalCount }) {
   return (
     <>
-      <MyHead title='むっく || ブログ一覧' />
+      <MyHead
+        pageTitle='むっく || ブログ一覧'
+        pageDescription='包装資材営業マンむっくのブログ一覧ページ'
+        pageUrl={`${siteMetadata.siteUrl}/blog/page/1`}
+      />
       <BreadCrumbs
         lists={[
           {

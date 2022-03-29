@@ -1,36 +1,41 @@
 import Head from 'next/head';
 import siteMetadata from '../data/siteMetadata';
 
-export default function MyHead({ title, description, keywords, canonical, pageImage }) {
-  const outputTitle = title || `${siteMetadata.title}`;
-  const outputDescription = description || `${siteMetadata.description}`;
-  const outputKeywords =
-    keywords || '包装資材、包材、衛生、使い捨て、消耗品、不織布、食器、洗剤、厨房、';
-  const outputCanonical = canonical || `${siteMetadata.siteUrl}`;
-  const outputImage = pageImage || 'https://mukk-blog.net/images/logo.png';
+export default function MyHead({
+  pageTitle,
+  pageDescription,
+  pagePath,
+  pageImage,
+  pageImageWidth,
+  pageImageHeight,
+}) {
+  const title = pageTitle ? pageTitle : siteMetadata.title;
+  const description = pageDescription ? pageDescription : siteMetadata.description;
+  const url = pagePath ? pagePath : siteMetadata.siteUrl;
+  const imgUrl = pageImage ? pageImage : siteMetadata.image;
+  const imgWidth = pageImageWidth ? pageImageWidth : 1200;
+  const imgHeight = pageImageHeight ? pageImageHeight : 630;
 
   return (
     <Head>
-      <title>{outputTitle}</title>
+      <title>{title}</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-
-      <meta name='description' content={outputDescription} />
-      <meta name='keywords' content={outputKeywords} />
-
-      <meta property='og:title' content={outputTitle} />
-      <meta property='og:description' content={outputDescription} />
-      <meta property='og:site_name' content={siteMetadata.title} />
-      <meta property='og:image' content={outputImage} />
-
+      <meta name='description' content={description} />
+      <meta property='og:url' content={url} />
+      <meta property='og:title' content={title} />
+      <meta property='og:site_name' content={title} />
+      <meta property='og:description' content={description} />
+      <meta property='og:type' content='website' />
+      <meta property='og:image' content={imgUrl} />{' '}
+      <meta property='og:image:width' content={String(imgWidth)} />
+      <meta property='og:image:height' content={String(imgHeight)} />
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@mukk_houzai' />
-      <meta name='twitter:title' content={outputTitle} />
-      <meta name='twitter:description' content={outputDescription} />
-      <meta name='twitter:image' content={outputImage} />
-
-      <link rel='canonical' href={outputCanonical} />
-
+      <meta name='twitter:title' content={title} />
+      <meta name='twitter:description' content={description} />
+      <meta name='twitter:image' content={imgUrl} />
+      <link rel='canonical' href={url} />
       <link rel='shortcut icon' href='/favicon.png' />
     </Head>
   );

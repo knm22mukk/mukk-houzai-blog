@@ -8,7 +8,11 @@ import siteMetadata from '../data/siteMetadata';
 export default function About() {
   return (
     <>
-      <MyHead title='むっく || 自己紹介' />
+      <MyHead
+        pageTitle='むっく || 自己紹介'
+        pageDescription='包装資材営業マンむっくの自己紹介ページ'
+        pagePath={`${siteMetadata.siteUrl}/blog`}
+      />
       <BreadCrumbs
         lists={[
           {
