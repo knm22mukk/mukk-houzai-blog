@@ -87,14 +87,14 @@ export default function Contact() {
         ]}
       />
       <PageTitle title='Contact' />
-      <p className='mb-10 text-sm text-center text-gray-500'>
+      <p className='mb-10 text-sm text-center text-gray-500 dark:text-white'>
         ブログ記事に関すること、ブログ運営に関することなど何でもお気軽にお問い合わせください。
         <br />
         お問い合わせいただいてから2,3日以内にご連絡させていただきます。
       </p>
       <form
         onSubmit={handleSubmit}
-        className='flex flex-col py-8 px-8 mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-xl'
+        className='flex flex-col py-8 px-8 mx-auto bg-white dark:bg-gray-600 rounded-lg border border-gray-200 shadow-xl'
       >
         <div className='text-left'>
           {showSuccessMessage && (
@@ -108,7 +108,7 @@ export default function Contact() {
             </p>
           )}
         </div>
-        <label htmlFor='name' className='mt-8 mb-2 font-light text-gray-500'>
+        <label htmlFor='name' className='mt-8 mb-2 font-light text-gray-500 dark:text-white'>
           <CgProfile className='inline-flex mr-2' />
           お名前<span className='text-red-500'>*</span>
         </label>
@@ -123,7 +123,7 @@ export default function Contact() {
         />
         {errors?.name && <p className='text-red-500'>お名前は入力必須です。</p>}
 
-        <label htmlFor='email' className='mt-8 mb-2 font-light text-gray-500'>
+        <label htmlFor='email' className='mt-8 mb-2 font-light text-gray-500 dark:text-white'>
           <HiOutlineMail className='inline-flex mr-2' />
           メールアドレス<span className='text-red-500'>*</span>
         </label>
@@ -138,7 +138,7 @@ export default function Contact() {
         />
         {errors?.email && <p className='text-red-500'>メールアドレスは入力必須です。</p>}
 
-        <label htmlFor='message' className='mt-8 mb-2 font-light text-gray-500'>
+        <label htmlFor='message' className='mt-8 mb-2 font-light text-gray-500 dark:text-white'>
           <BiMessageRoundedEdit className='inline-flex mr-2' />
           お問い合わせ内容<span className='text-red-500'>*</span>
         </label>

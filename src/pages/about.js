@@ -21,7 +21,7 @@ export default function About() {
         ]}
       />
       <PageTitle title='About' />
-      <div className='py-10 px-5 bg-white dark:bg-gray-800 rounded-lg shadow-xl'>
+      <div className='py-10 px-5 bg-white dark:bg-gray-600 rounded-lg border border-gray-200 shadow-xl'>
         <div className='xl:grid xl:grid-cols-3 xl:gap-x-8 items-start'>
           <div className='flex flex-col items-center'>
             <Image
@@ -40,20 +40,20 @@ export default function About() {
               <SocialIcons kind='facebook' href={siteMetadata.facebook} size={10} />
             </div>
           </div>
-          <div className='xl:col-span-2 pt-8 pb-8 max-w-none'>
-            <p className='pt-4 text-gray-500'>
+          <div className='xl:col-span-2 pt-8 pb-8 max-w-none text-gray-500 dark:text-white'>
+            <p className='pt-4'>
               ようこそ。
               <br />
               包装資材営業マンのむっくです。
               <br />
               私のブログサイトを見に来ていだきありがとうございます。
             </p>
-            <p className='pt-4 text-gray-500'>
+            <p className='pt-4'>
               私は包装資材の業界に携わってから約７年が経過しました。
               <br />
               様々な商品が新たに発売していく中で商品情報や、市場の情報をいち早く多く届けたいと思いこのブログサイトを作成しました。
             </p>
-            <p className='pt-4 text-gray-500'>
+            <p className='pt-4'>
               何かお気づきのことがございましたら、お問い合わせページからお問い合わせいただくか
               <br />
               SNSよりDMをお送りください。
@@ -61,7 +61,7 @@ export default function About() {
               SNSのフォローもよろしくお願いいたします。
               <br />
             </p>
-            <p className='pt-4 text-gray-500'>是非ゆっくり見ていってください。</p>
+            <p className='pt-4'>是非ゆっくり見ていってください。</p>
           </div>
         </div>
       </div>
