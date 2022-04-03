@@ -17,6 +17,7 @@ export default function BlogPage({ blog, totalCount }) {
         pageDescription='包装資材営業マンむっくのブログ一覧ページ'
         pageUrl={`${siteMetadata.siteUrl}/blog/page/1`}
       />
+      <PageTitle title='Blog' />
       <BreadCrumbs
         lists={[
           {
@@ -28,7 +29,6 @@ export default function BlogPage({ blog, totalCount }) {
           },
         ]}
       />
-      <PageTitle title='Blog' />
       <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4'>
         {blog.map((blog) => (
           <BlogCard

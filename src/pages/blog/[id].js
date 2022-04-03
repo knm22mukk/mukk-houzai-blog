@@ -18,6 +18,7 @@ export default function BlogId({ blog }) {
         pageImage={blog.image.url}
         pagePath={`${siteMetadata.siteUrl}/blog/${blog.id}`}
       />
+      <PageTitle title={blog.title} />
       <BreadCrumbs
         lists={[
           {
@@ -33,7 +34,6 @@ export default function BlogId({ blog }) {
           },
         ]}
       />
-      <PageTitle title={blog.title} />
       <p className='mb-3 text-sm text-center'>
         <Date dateString={blog.publishedAt} />
       </p>
@@ -48,12 +48,12 @@ export default function BlogId({ blog }) {
           className='p-3 prose dark:prose-invert'
         />
       </article>
-      <div className='pt-10 text-center'>
+      <div className='py-10 text-center'>
         <Link href='/blog/page/1'>
           <Button title='一覧に戻る' />
         </Link>
-        <ShareButton url={`${siteMetadata.siteUrl}/blog/${blog.id}`} title={blog.title} />
       </div>
+      <ShareButton url={`${siteMetadata.siteUrl}/blog/${blog.id}`} title={blog.title} />
     </>
   );
 }

@@ -12,6 +12,7 @@ export default function PrivacyPolicy() {
         pageDescription='包装資材営業マンむっく || プライバシーポリシー'
         pagePath={`${siteMetadata.siteUrl}/privacy`}
       />
+      <PageTitle title='プライバシーポリシー' />
       <BreadCrumbs
         lists={[
           {
@@ -23,7 +24,6 @@ export default function PrivacyPolicy() {
           },
         ]}
       />
-      <PageTitle title='プライバシーポリシー' />
       <Privacy />
     </>
   );

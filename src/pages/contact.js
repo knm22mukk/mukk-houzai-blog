@@ -80,6 +80,7 @@ export default function Contact() {
         pageDescription='包装資材営業マンむっくのお問い合わせページ　お問い合わせはこちらからお願いします'
         pagePath={`${siteMetadata.siteUrl}/contact`}
       />
+      <PageTitle title='Contact' />
       <BreadCrumbs
         lists={[
           {
@@ -91,7 +92,6 @@ export default function Contact() {
           },
         ]}
       />
-      <PageTitle title='Contact' />
       <p className='mb-10 text-sm text-center text-gray-500 dark:text-white'>
         ブログ記事に関すること、ブログ運営に関することなど何でもお気軽にお問い合わせください。
         <br />

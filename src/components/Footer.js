@@ -4,7 +4,7 @@ import SocialIcons from './SocialIcons';
 
 export default function Footer() {
   return (
-    <footer className='pt-10 h-48 bg-gray-600'>
+    <footer className='pt-10 h-48 bg-blue-500 dark:bg-gray-600'>
       <div className='flex flex-col items-center text-white'>
         <div className='flex mb-4 space-x-5'>
           <SocialIcons kind='twitter' href={siteMetadata.twitter} />

@@ -22,16 +22,10 @@ export default function MobileNav() {
         {active ? <MdClear /> : <GiHamburgerMenu />}
       </button>
       <div
-        className={`fixed w-full h-full top-32 right-0 bg-gray-200 opacity-95 z-10 transform ease-in-out duration-100 ${
-          active ? 'block' : 'hidden'
+        className={`fixed w-full h-full top-32 right-0 bg-gray-200 dark:bg-gray-600 opacity-95 z-10 transform ease-in-out duration-100 ${
+          active ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <button
-          type='button'
-          aria-label='toggle modal'
-          className='fixed w-full h-full cursor-auto focus:outline-none'
-          onClick={handleClick}
-        ></button>
         <nav className='fixed mt-8 h-full'>
           {headerNavLinks.map((link) => (
             <div key={link.title} className='py-4 px-12'>

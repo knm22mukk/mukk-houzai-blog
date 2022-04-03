@@ -13,6 +13,7 @@ export default function About() {
         pageDescription='包装資材営業マンむっくの自己紹介ページ'
         pagePath={`${siteMetadata.siteUrl}/blog`}
       />
+      <PageTitle title='About' />
       <BreadCrumbs
         lists={[
           {
@@ -24,7 +25,6 @@ export default function About() {
           },
         ]}
       />
-      <PageTitle title='About' />
       <div className='py-10 px-5 bg-white dark:bg-gray-600 rounded-lg border border-gray-200 shadow-xl'>
         <div className='xl:grid xl:grid-cols-3 xl:gap-x-8 items-start'>
           <div className='flex flex-col items-center'>
