@@ -5,6 +5,7 @@ import Date from '../../components/Date';
 import Link from '../../components/Link';
 import MyHead from '../../components/MyHead';
 import PageTitle from '../../components/PageTitle';
+import SectionHeader from '../../components/Sectionheader';
 import ShareButton from '../../components/ShareButton';
 import siteMetadata from '../../data/siteMetadata';
 import { client } from '../../libs/client';
@@ -54,6 +55,15 @@ export default function BlogId({ blog }) {
         </Link>
       </div>
       <ShareButton url={`${siteMetadata.siteUrl}/blog/${blog.id}`} title={blog.title} />
+      <SectionHeader title='お問い合わせはこちら' />
+      <div className='my-5 text-center border-gray-200'>
+        <p className='pb-5 text-gray-500 dark:text-white'>
+          ご意見・ご質問などは、下記からお問い合わせください。
+        </p>
+        <Link href='/contact'>
+          <Button title='お問い合わせ' />
+        </Link>
+      </div>
     </>
   );
 }

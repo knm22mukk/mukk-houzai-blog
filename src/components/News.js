@@ -4,7 +4,7 @@ export default function News() {
   return (
     <>
       <SectionHeader title='更新情報' />
-      <ul className=''>
+      <ul className='text-center'>
         <li className='p-3 text-gray-600 dark:text-white'>
           ダークモードとライトモードの変更ができるようになりました。
         </li>

@@ -27,7 +27,7 @@ export default function Home({ blog }) {
             />
           ))}
         </div>
-        <div className='pt-5'>
+        <div className='pt-5 text-center'>
           <Link href='/blog/page/1'>
             <Button title='記事一覧' />
           </Link>
@@ -36,7 +36,7 @@ export default function Home({ blog }) {
       <News />
       <ShareButton url='https://mukk-blog.net/' title='むっくの包装資材ブログ' />
       <SectionHeader title='お問い合わせはこちら' />
-      <div className='my-5 border-gray-200'>
+      <div className='my-5 text-center border-gray-200'>
         <p className='pb-5 text-gray-500 dark:text-white'>
           ご意見・ご質問などは、下記からお問い合わせください。
         </p>

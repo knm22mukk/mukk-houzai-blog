@@ -14,7 +14,7 @@ export default function ShareButton({ url, title }) {
   return (
     <>
       <SectionHeader title='SNSへシェアする' />
-      <div className='flex justify-start items-center p-5 space-x-4'>
+      <div className='flex justify-center items-center p-5 space-x-4'>
         <TwitterShareButton url={url} title={title}>
           <TwitterIcon size={32} round={true} />
         </TwitterShareButton>
