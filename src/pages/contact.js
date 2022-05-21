@@ -160,7 +160,12 @@ export default function Contact() {
         {errors?.message && <p className='text-red-500'>お問い合わせ内容は入力必須です。</p>}
 
         <div className='pt-8 text-center'>
-          <Button title={buttonText} />
+          <button
+            className='py-2 px-4 font-bold text-white bg-blue-500 rounded opacity-50 cursor-not-allowed'
+            disabled
+          >
+            調整中のため送信できません
+          </button>
         </div>
       </form>
     </>
